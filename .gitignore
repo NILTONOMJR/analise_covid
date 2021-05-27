@@ -129,4 +129,8 @@ dmypy.json
 .pyre/
 
 #VS CODE
-.vscode
+.vscode/
+
+# venv
+venv_streamlit/
+
