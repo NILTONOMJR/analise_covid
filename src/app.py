@@ -32,8 +32,8 @@ def carrega_dados(caminho):
     return dados
 
 def main():
-  obitos_2019 = carrega_dados("/dados/obitos-2019.csv")
-  obitos_2020 = carrega_dados("/dados/obitos-2019.csv")
+  obitos_2019 = carrega_dados("dados/obitos-2019.csv")
+  obitos_2020 = carrega_dados("dados/obitos-2020.csv")
 
   tipo_doenca = obitos_2019["tipo_doenca"].unique()
   estado = np.append( obitos_2019["uf"].unique(), "BRASIL" )
