@@ -27,6 +27,7 @@ def grafico_comparativo(dados_2019, dados_2020, causa, estado="BRASIL" ):
     ax.set_title(f"Óbitos {causa} = {estado}")
     return fig
     
+@st.cache()
 def carrega_dados(caminho):
     dados = pd.read_csv(caminho)
     return dados
